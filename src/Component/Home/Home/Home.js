@@ -10,8 +10,7 @@ import img4 from '../../../images/img4.webp'
 const Home = () => {
   return (
     <div>
-      <h3>home</h3>
-
+     
       <div className='carosel'>
     <Carousel >
     <Carousel.Item>

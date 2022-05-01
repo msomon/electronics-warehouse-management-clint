@@ -3,10 +3,10 @@ import { Button } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
+import auth from '../../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -31,6 +31,7 @@ import 'react-toastify/dist/ReactToastify.css';
       const name = event.target.name.value
       const email = event.target.email.value
       const password = event.target.password.value
+      console.log(name,email,password);
   if(password.length < 6){
     return toast('Please Give More Than 6 Character')
   }
@@ -46,23 +47,23 @@ import 'react-toastify/dist/ReactToastify.css';
   
     return (
       <div className='container w-50 mx-auto'>
-        <h1>Registar Now</h1>
+        <h2 className='mt-2 mb-4'>Registar Now</h2>
         <Form onSubmit={registar}>
         <Form.Group className="mb-3" controlId="formBasicname">
-      <Form.Label>Name</Form.Label>
+    
       <Form.Control required name='name' type="text" placeholder="Name" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Email address</Form.Label>
+      
       <Form.Control name='email' required type="email" placeholder="Enter email" />
     </Form.Group>
     
     <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Password</Form.Label>
+      
       <Form.Control name='password' required type="password" placeholder="Password" />
     </Form.Group>
-    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-      <Form.Check className={agree ? "ps-2 text-primary": "ps-2 text-danger"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms and conditions" />
+    <Form.Group className="mb-3 ms-5" controlId="formBasicCheckbox">
+      <Form.Check className={agree ? "ps-2 text-primary": "ps-2 text-danger"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept somon electronics Terms and conditions" />
     </Form.Group>
     <Button variant="primary" type="submit">
       Registar

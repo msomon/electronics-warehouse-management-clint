@@ -1,14 +1,42 @@
 
 import React from 'react';
+import './Navbar.css'
 
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
+  const [user]= useAuthState(auth)
+  const logout = () => {
+    signOut(auth);
+  }
+  // console.log(user);
   return (
-    <div className='nav'>
+    <div className='navbar '>
+      <div>
+        <h3>Somon Electronics</h3>
+      </div>
+      <div>
       <Link to='/home'>Home</Link>
-      <Link to='/manageinventory'>Manage Inventory</Link>
-      <Link to='/login'>Login</Link>
+      {
+        user && <>
+        <Link to='/manageinventory'>Manage Inventory</Link>
+        <Link to='/myitems'>My Items</Link>
+        <Link to='/additems'>Add Items</Link>
+        </>
+
+      }
+      <Link to='/blogs'>Blogs</Link>
+      {
+        user?.uid ? <button className='logout' onClick={logout}>Logout</button>
+        :
+            <Link to='/login'>Login</Link>
+
+      }
+      
+      </div>
     </div>
   );
 };

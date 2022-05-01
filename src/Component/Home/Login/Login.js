@@ -3,7 +3,7 @@ import React, { useRef} from 'react';
 import { Form } from 'react-bootstrap';
 import { useLocation, useNavigate} from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
+import auth from '../../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
 import { toast } from 'react-toastify';
 import './Login.css'
@@ -72,7 +72,7 @@ navigate('/registar')
 <br />
 <p className='text-danger'>{error?.message}</p>
 
-     <p className='mt-2'>New somon photography ? <span className='text-primary' onClick={navigateRegistar}>Please Registar </span></p>
+     <p className='mt-2'> New Somon Electronics ? <span className='text-primary' onClick={navigateRegistar}>Please Registar </span></p>
      <p className='mt-2'>Forget password ? <span className='text-primary' onClick={resetPassword}>Reset password </span></p>
      <CommonLogin></CommonLogin>
     </div>
