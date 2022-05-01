@@ -11,6 +11,7 @@ import MyItems from './Component/Home/MyItems/MyItems';
 import Registar from './Component/Home/Registar/Registar';
 import RequireAuth from './Component/Home/RequireAuth/RequireAuth';
 import Navbar from './Component/Navbar/Navbar';
+import NotFound from './Component/NotFound/NotFound';
 
 // import InventoryDetails from './Component/Home/InventoryDetails/InventoryDetails';
 // import RequireAuth from './Component/Home/RequireAuth/RequireAuth';
@@ -43,6 +44,7 @@ function App() {
      }></Route>
      
      <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+     <Route path='*' element={<NotFound></NotFound>}></Route>
 
 
       </Routes>

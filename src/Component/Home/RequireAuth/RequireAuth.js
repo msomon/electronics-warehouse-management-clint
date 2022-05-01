@@ -18,7 +18,7 @@ const RequireAuth = ({children}) => {
       if(!user.emailVerified){
         return <div>
           <h3 className='text-success'>Please Verify Your Email Address </h3>
-          <button onClick={async () => {
+          <button className='btn btn-primary' onClick={async () => {
               await sendEmailVerification();
               toast('Sent email');
             }}>Send Verification </button>

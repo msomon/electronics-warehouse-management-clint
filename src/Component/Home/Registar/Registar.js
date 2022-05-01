@@ -8,6 +8,7 @@ import CommonLogin from '../CommonLogin/CommonLogin';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../RequireAuth/Loading/Loading';
 
 
   const Registar = () => {
@@ -23,7 +24,7 @@ import 'react-toastify/dist/ReactToastify.css';
     const [agree,setAgree]= useState(false);
   
     if(loading){
-      <p>loading..</p>
+      <Loading></Loading>
     }
   
     const registar =async(event)=>{
