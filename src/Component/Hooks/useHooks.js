@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useHooks = () => {
   const [inventories,setInventories]=useState([]);
@@ -8,6 +8,7 @@ fetch('http://localhost:5000/inventory')
 .then(data=>setInventories(data))
 
 },[])
+console.log(inventories);
 
 return {inventories}
 };

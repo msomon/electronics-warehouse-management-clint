@@ -1,13 +1,11 @@
 import React from 'react';
-import './Inventory.css'
-const Inventory = ({inventory}) => {
-  console.log(inventory.quantity);
-  const {img,name,description,price,quantity,supplierName}=inventory;
 
+const Inventories = ({inventory}) => {
+  const {img,name,price,quantity,supplierName,description}=inventory;
 
   return (
     <div className='cart'>
-      <img className='' src={img} alt="" />
+      <img src={img} alt="" />
       <h4>Product: {name}</h4>
       <h4>Price: {price}</h4>
       <h4>Quantity: {quantity}</h4>
@@ -17,4 +15,4 @@ const Inventory = ({inventory}) => {
   );
 };
 
-export default Inventory;
+export default Inventories;

@@ -12,7 +12,7 @@ import useHooks from '../../Hooks/useHooks';
 const Home = () => {
   const {inventories}=useHooks()
 
-console.log(inventories);
+// console.log(inventories.quantity);
 
   return (
     <div>
