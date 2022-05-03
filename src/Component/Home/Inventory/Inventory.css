@@ -1,0 +1,12 @@
+.cart{
+  border: 1px solid green;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+.cart img{
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+}
