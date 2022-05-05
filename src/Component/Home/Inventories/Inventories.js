@@ -10,7 +10,7 @@ const Inventories = ({inventory}) => {
       <h4>Price: {price}</h4>
       <h4>Quantity: {quantity}</h4>
       <h4>Supplier Name: {supplierName}</h4>
-      <h4>Description: {description}</h4>
+      <h5>Description: {description}</h5>
     </div>
   );
 };

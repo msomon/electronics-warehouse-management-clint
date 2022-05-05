@@ -1,9 +1,10 @@
 .cart{
-  border: 1px solid green;
+  box-shadow: 0 0 0 5;
   padding: 10px;
   text-align: center;
   margin: 20px;
   border-radius: 10px;
+  border: 1px solid wheat;
 }
 .cart img{
   width: 400px;

@@ -8,9 +8,18 @@ fetch('http://localhost:5000/inventory')
 .then(data=>setInventories(data))
 
 },[])
-console.log(inventories);
+const [items,setItems]=useState([]);
 
-return {inventories}
+useEffect(()=>{
+fetch('http://localhost:5000/myItems')
+.then(res=>res.json())
+.then(data=>setItems(data))
+},[items])
+
+
+// console.log(inventories);
+
+return {inventories,setInventories,items,setItems } ;
 };
 
 export default useHooks;

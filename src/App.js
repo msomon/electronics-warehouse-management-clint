@@ -5,6 +5,7 @@ import './App.css';
 import AddItems from './Component/Home/AddItems/AddItems';
 import Blogs from './Component/Home/Blogs/Blogs';
 import Home from './Component/Home/Home/Home';
+import InventoryDetails from './Component/Home/InventoryDetails/InventoryDetails';
 import Login from './Component/Home/Login/Login';
 import ManageInventory from './Component/Home/ManageInventory/ManageInventory';
 import MyItems from './Component/Home/MyItems/MyItems';
@@ -12,9 +13,6 @@ import Registar from './Component/Home/Registar/Registar';
 import RequireAuth from './Component/Home/RequireAuth/RequireAuth';
 import Navbar from './Component/Navbar/Navbar';
 import NotFound from './Component/NotFound/NotFound';
-
-// import InventoryDetails from './Component/Home/InventoryDetails/InventoryDetails';
-// import RequireAuth from './Component/Home/RequireAuth/RequireAuth';
 
 
 
@@ -27,6 +25,7 @@ function App() {
      <Route path='/home' element={<Home></Home>}></Route>
      <Route path='/login' element={<Login></Login>}></Route>
      <Route path='/registar' element={<Registar></Registar>}></Route>
+     <Route path='/inventorydetails/:id' element={<InventoryDetails></InventoryDetails>}></Route>
      <Route path='/manageinventory' element={
        <RequireAuth>
          <ManageInventory></ManageInventory>

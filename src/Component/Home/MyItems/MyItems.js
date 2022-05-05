@@ -1,11 +1,20 @@
-import React from 'react';
+
+import { useEffect, useState } from 'react';
+import useHooks from '../../Hooks/useHooks';
+import Item from './Item';
+import './MyItems.css'
 
 const MyItems = () => {
+  const {items,setItems}=useHooks()
+
   return (
-    <div>
-      <h1>my items </h1>
+    <div className='items container'>
+      {
+        items.map(item=><Item item={item} key={item._id} ></Item>)
+      }
     </div>
   );
-};
+}
+
 
 export default MyItems;
