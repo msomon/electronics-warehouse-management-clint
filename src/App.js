@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
+import Footer from './Component/Footer/Footer';
 import AddItems from './Component/Home/AddItems/AddItems';
 import Blogs from './Component/Home/Blogs/Blogs';
 import Home from './Component/Home/Home/Home';
@@ -47,6 +48,7 @@ function App() {
 
 
       </Routes>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
   );

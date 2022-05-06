@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
-const AddItems = () => {
+const AddItems = (event) => {
   const { register, handleSubmit } = useForm();
   const onSubmit = data => {
-    console.log(data)
+    // console.log(data)
     const url = `http://localhost:5000/addItems`
     fetch(url,{
       method:'POST',
@@ -15,6 +16,8 @@ const AddItems = () => {
     }) 
     .then(res=>res.json())
     .then(result=>console.log(result))
+    toast('Add Item Succesfully')
+  
   }
 
 
