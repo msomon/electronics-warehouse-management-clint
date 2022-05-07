@@ -4,10 +4,10 @@ import Item from './Item';
 import './MyItems.css'
 
 const MyItems = () => {
-  const {items,setItems}=useHooks()
+  const {items}=useHooks()
 
   return (
-    <div className='items container'>
+    <div className='items'>
       {
         items?.map(item=><Item item={item} key={item._id} ></Item>)
       }

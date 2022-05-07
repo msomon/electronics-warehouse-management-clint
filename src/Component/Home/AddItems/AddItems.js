@@ -23,7 +23,7 @@ const AddItems = (event) => {
 
   return (
     <div className='w-50 mx-auto'>
-      <h1>please add Items </h1>
+      <h1 className='mt-3 mb-4'>Please Add Inventory </h1>
       <form className='d-flex flex-column ' onSubmit={handleSubmit(onSubmit)}>
       <input placeholder='Photo url' className='mb-3' type="text" {...register("img")} />
       <input placeholder='Name' className='mb-3' {...register("name", { required: true, maxLength: 20 })} />
@@ -31,7 +31,7 @@ const AddItems = (event) => {
       <input placeholder='SupplierName' className='mb-3' {...register("supplierName")} />
       <input placeholder='Quantity' className='mb-3' type="number" {...register("quantity")} />
       <input placeholder='Description' className='mb-3' {...register("description")} />
-      <input className='btn btn-primary' type="submit" value='Add Items'/>
+      <input className='btn btn-primary' type="submit" value='Add Inventory'/>
     </form>
     </div>
   );
