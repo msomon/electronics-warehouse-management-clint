@@ -3,7 +3,7 @@ import useHooks from '../../Hooks/useHooks';
 
 
 const Items = ({item}) => {
-  console.log(item);
+  // console.log(item);
   
   const {img,_id,name,price,quantity,supplierName,description}=item;
   
@@ -33,7 +33,7 @@ method:'DELETE'
       <h4>Quantity: {quantity}</h4>
       <h4>Supplier Name: {supplierName}</h4>
       <h5>Description: {description}</h5>
-      <button className='btn btn-danger mt-2 mb-2'onClick={()=>deleteItem(_id)} >Delete Item</button>
+      <button className='btn btn-danger mt-2 mb-2'onClick={()=>deleteItem(_id)} >Delete</button>
     </div>
   );
 };

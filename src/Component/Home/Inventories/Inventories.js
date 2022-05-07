@@ -2,9 +2,9 @@ import React from 'react';
 import useHooks from '../../Hooks/useHooks';
 const Inventories = ({inventory}) => {
  
-  const {img,_id,name,price,quantity,supplierName,description}=inventory;
-
   const {inventories,setInventories}=useHooks()
+  const {img,_id,name,price,quantity,supplierName,description}=inventory;
+// console.log(quantity);
  
 
   const deleteInventory=(id)=>{
@@ -33,7 +33,7 @@ method:'DELETE'
       <img src={img} alt="" />
       <h4>Product: {name}</h4>
       <h4>Price: {price}</h4>
-      {/* <h4>Quantity: {quantity}</h4> */}
+      <h4>Quantity: {quantity}</h4>
       <h4>Supplier Name: {supplierName}</h4>
       <h5>Description: {description}</h5>
       <div className='mt-4 mb-4 align-center'>

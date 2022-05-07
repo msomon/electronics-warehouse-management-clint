@@ -18,7 +18,7 @@ fetch('http://localhost:5000/myItems')
 },[items])
 
 
-console.log(items);
+// console.log(items);
 
 return {inventories,setInventories,items,setItems}  ;
 };

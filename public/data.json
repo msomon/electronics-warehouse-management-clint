@@ -2,7 +2,7 @@
   {"img":"https://i.ibb.co/tcLCQRK/tv.webp",
    "name":"Talivision",
    "price":"14000 ",
-   "qunatity":4 ,
+   "quantity":"4" ,
    "supplierName":"Hasan",
    "description":"The availability of various types of archival storage media such as Betamax and VHS tapes, high-capacity hard disk drives, DVDs, flash drives, high-definition Blu-ray Discs. "
   
@@ -10,7 +10,7 @@
   {"img":"https://i.ibb.co/wWn94H2/refrigerator.webp",
    "name":"Refrigerator ",
    "price":"32000",
-   "qunatity":10,
+   "quantity":"10",
    "supplierName":"Hasan",
    "description":"Perlick proudly offers the industrys widest selection of 32 height ADA-compliant undercounter refrigeration. Featuring full-extension pullout shelving, stainless steel interiors, and the industry-leading RAPIDcool™ force-air refrigeration system. "
   
@@ -18,7 +18,7 @@
   {"img":"https://i.ibb.co/F6kN5jV/lamp.webp ",
    "name":"lamp ",
    "price":"300 ",
-   "qunatity":10,
+   "quantity":"10",
    "supplierName":"Hasan",
    "description":"A great desk lamp can transform your workspace—both functionally and aesthetically. It can reduce eye fatigue and help you better see what you’re working on. "
   
@@ -26,7 +26,7 @@
   {"img":"https://i.ibb.co/KxkcqgH/ceilling-fan.webp",
    "name":"Ceilling Fan",
    "price":"3000",
-   "qunatity":5,
+   "quantity":"5",
    "supplierName":"Hasan",
    "description":"Adding a ceiling fan is a great way to make your home more comfortable as well as enhance your decor. With many styles and features to choose from, you can find just the right balance of value, style. "
   
@@ -34,7 +34,7 @@
   {"img":"https://i.ibb.co/k6QNJzg/computer.webp",
    "name":"Computer",
    "price":"90000",
-   "qunatity":12,
+   "quantity":"12",
    "supplierName":"Hasan",
    "description":"A desktop computer can be a smart and ergonomic pick if you’re setting up a home office and aren’t worried as much about mobility. Staring into a monitor puts less strain on your neck than staring down into a laptop. "
   
@@ -42,7 +42,7 @@
   {"img":"https://i.ibb.co/HhWT6nh/ricecooker.webp",
    "name":"Rice Cooker",
    "price":"2300",
-   "qunatity":6,
+   "quantity":"6",
    "supplierName":"Hasan ",
    "description":"Rice is one of the world’s most versatile foods: You could eat a different rice dish every day for weeks without getting bored. If that sounds appealing. "
   
@@ -50,7 +50,7 @@
   {"img":"https://i.ibb.co/qR17qY3/loud-speaker.webp",
    "name":"Speaker",
    "price":"3400",
-   "qunatity":15,
+   "quantity":"15",
    "supplierName":"Hasan",
    "description":"Since it's battery-powered, it doesn't need to remain wired to an outlet to work, making it incredibly portable. It's also rated IP67 for dust and water resistance. "
   
@@ -58,7 +58,7 @@
   {"img":"https://i.ibb.co/rsBY9N6/monitor.webp",
    "name":"Monitor",
    "price":"25000",
-   "qunatity":8,
+   "quantity":"8",
    "supplierName":"Hasan",
    "description":"Monitor is an output device that displays information in pictorial or text form. A monitor usually comprises a visual display, some circuitry, a casing, and a power supply. "
   
@@ -66,7 +66,7 @@
   {"img":"https://i.ibb.co/Nr3vQMg/mobile.webp ",
    "name":"Mobile",
    "price":"22000",
-   "qunatity":20,
+   "quantity":"20",
    "supplierName":"Hasan",
    "description":"Mobile phone is a wireless handheld device that allows users to make and receive calls. While the earliest generation of mobile phones could only make and receive calls."
   
@@ -74,7 +74,7 @@
   {"img":"https://i.ibb.co/GHVs5jF/camera.webp",
    "name":"Camera",
    "price":"70000",
-   "qunatity":10,
+   "quantity":"10",
    "supplierName":"Hasan",
    "description":"Camera is an optical instrument that captures a visual image. At a basic level, cameras consist of sealed boxes (the camera body), with a small hole. "
   
@@ -82,7 +82,7 @@
   {"img":"https://i.ibb.co/jMN6trJ/laptop.webp",
    "name":"Laptop",
    "price":"80000",
-   "qunatity":13,
+   "quantity":"13",
    "supplierName":"Hasan",
    "description":"Laptop computer, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer generally smaller than a briefcase that can easily be transported. "
   
@@ -90,7 +90,7 @@
   {"img":"https://i.ibb.co/MZFTstR/smartwatch.webp",
    "name":"Smart Watch",
    "price":"30000",
-   "qunatity":16,
+   "quantity":"16",
    "supplierName":"Hasan",
    "description":"Smartwatch is a wearable computing device that closely resembles a wristwatch or other time-keeping device.  "
   
@@ -98,7 +98,7 @@
   {"img":"https://i.ibb.co/2ddmcBy/air-condition.webp",
    "name":"Air Condition",
    "price":"65000",
-   "qunatity":11,
+   "quantity":"11",
    "supplierName":"Hasan",
    "description":"Air conditioning, often abbreviated as A/C or AC, is the process of removing heat and controlling the humidity of air in an enclosed space to achieve a more comfortable interior environment. "
   
@@ -106,15 +106,15 @@
   {"img":"https://i.ibb.co/bLcH36f/blender.webp",
    "name":"Blander",
    "price":"5000",
-   "qunatity":17,
+   "quantity":"17",
    "supplierName":"Hasan",
    "description":"A blender (sometimes called a mixer or liquidiser in British English) is a kitchen and laboratory appliance used to mix, crush, purée or emulsify food and other substances.  "
   
   },
   {"img":"https://i.ibb.co/MMgK8Pg/tabil-fan.webp",
    "name":"Table Fan",
-   "price":5000,
-   "qunatity":18,
+   "price":"5000",
+   "quantity":"18",
    "supplierName":"Hasan",
    "description":"Electric Table Fan is one of the common electric appliances used in houses, offices, shops and business establishments to provide air circulation and to cool down temperature. "
   

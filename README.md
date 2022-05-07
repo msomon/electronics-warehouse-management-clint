@@ -2,16 +2,13 @@
 # ELECTRONICS-WAREHOUSE
 link:
 
-## useges technology
+## Useges Technology
 * router
 * bootstrap
 * react-bootstrap
 * react-firebase-hooks
 * react-hook-form
 * react-toastify
-* 
-* 
-
 
 
 

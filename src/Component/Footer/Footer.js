@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
      Contuct Us :+02331123 
      <h6>Email:mdhasan@gmail.com</h6> 
-      <p>Copyright @2020 CodeOpacity.Designed By Somon </p>
+      <p>Copyright @2020 SomonElectronics.Designed By Somon </p>
     </div>
   );
 };
