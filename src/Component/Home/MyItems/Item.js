@@ -12,7 +12,7 @@ const Items = ({item}) => {
     // console.log('hallow');
 const proceed = window.confirm('are you sure')
 if(proceed){
-const url =`http://localhost:5000/myItems/${id}`
+const url =`https://limitless-dawn-19403.herokuapp.com/myItems/${id}`
 fetch(url,{
 method:'DELETE'
 })

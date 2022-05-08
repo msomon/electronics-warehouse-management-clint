@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import useHooks from '../../Hooks/useHooks';
 import Inventories from '../Inventories/Inventories';
 import MyItems from '../MyItems/MyItems';
-
+import './ManageInventory.css'
 const ManageInventory = () => {
   const navigate = useNavigate()
   const {inventories}=useHooks()

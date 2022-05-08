@@ -11,7 +11,7 @@ const Inventories = ({inventory}) => {
     // console.log('hallow');
 const proceed = window.confirm('are you sure')
 if(proceed){
-const url =`http://localhost:5000/inventory/${id}`
+const url =`https://limitless-dawn-19403.herokuapp.com/inventory/${id}`
 fetch(url,{
 method:'DELETE'
 })
