@@ -10,7 +10,7 @@ const InventoryDetails = () => {
   const {id}= useParams()
   const {img,_id,name,price,quantity,supplierName,description}=service ;
   
-  console.log(service.quantity);
+  // console.log(service.quantity);
   useEffect( ()=>{
     const url =`http://localhost:5000/inventory/${id}`;
   fetch(url)
@@ -24,9 +24,13 @@ const InventoryDetails = () => {
     const deliveryItem =()=>{
        const {quantity, ...rest} = service ;
       //  console.log(quantity);
-       const newQuantity = (quantity - 1) ;
-       const updateQunatity ={quantity:newQuantity,...rest}
-       setService(updateQunatity)
+      if(quantity < 1){
+        return toast('Out Of Stock')
+      }
+      
+        const newQuantity = (quantity - 1) ;
+        const updateQunatity ={quantity:newQuantity,...rest}
+        setService(updateQunatity)
 
       const url =`http://localhost:5000/inventory/${id}`;
       fetch(url,{
@@ -43,11 +47,16 @@ const InventoryDetails = () => {
     const addQuantity =(event)=>{
       event.preventDefault()
        const {quantity, ...rest} = service ;
-       const addQuantity = parseInt(event.target.name.value) ;
-       const newQuantity = parseInt(quantity) + addQuantity ;
-  
-       console.log(newQuantity);
+       console.log(quantity);
+       console.log(rest);
+       const addQuantity =parseInt(event.target.name.value) ;
+       const previewQuantity =parseInt(quantity)
+       console.log(addQuantity ,previewQuantity);
+       const newQuantity = previewQuantity + addQuantity ;
+  console.log(newQuantity
+    );
        const updateQunatity ={quantity:newQuantity,...rest}
+      //  console.log(updateQunatity);
        setService(updateQunatity)
 
       const url =`http://localhost:5000/inventory/${id}`;

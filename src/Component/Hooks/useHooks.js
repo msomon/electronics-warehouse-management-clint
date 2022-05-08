@@ -12,7 +12,7 @@ fetch('http://localhost:5000/inventory')
 const [items,setItems]=useState([]);
 
 useEffect(()=>{
-fetch('http://localhost:5000/myItems')
+fetch('http://localhost:5000/myitems')
 .then(res=>res.json())
 .then(data=>setItems(data))
 },[items])

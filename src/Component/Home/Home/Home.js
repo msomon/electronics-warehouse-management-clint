@@ -27,7 +27,7 @@ const Home = () => {
       />
       <Carousel.Caption>
         <h3> Welcome My Website </h3>
-        <p>Good Quality Camera</p>
+        <p>Good Quality Producta</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -38,8 +38,8 @@ const Home = () => {
       />
 
       <Carousel.Caption>
-        <h3>Welcome Photography World</h3>
-        <p>Quality full Picture and Nature</p>
+        <h3>Welcome Newproduct World</h3>
+        <p>Quality full Products</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -52,7 +52,7 @@ const Home = () => {
       <Carousel.Caption>
         <h3>Your Opinion My Commitment</h3>
         <p>
-          Highly Trained Photographer 
+          Highly Good Maintainense 
         </p>
       </Carousel.Caption>
     </Carousel.Item>

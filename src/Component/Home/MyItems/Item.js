@@ -30,7 +30,7 @@ method:'DELETE'
       <img className='' src={img} alt="" />
       <h4>Product: {name}</h4>
       <h4>Price: {price}</h4>
-      <h4>Quantity: {quantity}</h4>
+      <h4>Quantity: {quantity && quantity}</h4>
       <h4>Supplier Name: {supplierName}</h4>
       <h5>Description: {description}</h5>
       <button className='btn btn-danger mt-2 mb-2'onClick={()=>deleteItem(_id)} >Delete</button>
