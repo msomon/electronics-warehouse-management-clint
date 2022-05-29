@@ -7,6 +7,7 @@ import auth from '../../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
 import { toast } from 'react-toastify';
 import './Login.css'
+import axios from 'axios';
 
 
 const Login = () => {
@@ -26,13 +27,18 @@ const location = useLocation()
 let from = location.state?.from?.pathname ||'/';
 
 
-const handleLogin =event=>{
+const handleLogin =async event=>{
 event.preventDefault();
 const email =event.target.email.value;
 const password = event.target.password.value;
-signInWithEmailAndPassword(email, password)
+await signInWithEmailAndPassword(email, password)
+const {data} = await axios.post('https://cryptic-tor-88585.herokuapp.com/login',{email})
+// console.log(data);
+localStorage.setItem('accessToken',data.accessToken)
+navigate(from ,{replace:true})
 
 }
+
 
 const resetPassword=async(event)=>{
   const email = event.target.email.value;
@@ -42,7 +48,7 @@ const resetPassword=async(event)=>{
 
 
 if(user){
-  navigate(from ,{replace:true})
+  
 
 }
 

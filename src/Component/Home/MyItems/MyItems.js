@@ -1,10 +1,45 @@
 
-import useHooks from '../../Hooks/useHooks';
+import axios from 'axios';
+import { signOut } from 'firebase/auth';
+import { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
+
 import Item from './Item';
 import './MyItems.css'
 
 const MyItems = () => {
-  const {items}=useHooks()
+  const [items,setItems]=useState([]);
+const [user] =useAuthState(auth)
+const navigate = useNavigate()
+
+  useEffect(()=>{ 
+
+    //  use axios   //
+    
+    const myItem = async()=>{
+      const email = user.email
+      const url = `https://cryptic-tor-88585.herokuapp.com/myitems?email=${email}`
+     try{
+      const {data} = await axios.get(url,{
+        headers :{
+          authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        }
+      })
+      setItems(data)
+     }
+     catch(error){
+       if(error.response.status === 401 || error.response.status === 403 ){
+         signOut(auth)
+        navigate('/login')
+       }
+     }
+    }
+    myItem()
+    
+    
+    },[user])
 
   return (
     <div className='items'>

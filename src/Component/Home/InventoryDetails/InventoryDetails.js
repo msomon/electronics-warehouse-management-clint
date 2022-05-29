@@ -12,7 +12,7 @@ const InventoryDetails = () => {
   
   // console.log(service.quantity);
   useEffect( ()=>{
-    const url =`https://limitless-dawn-19403.herokuapp.com/inventory/${id}`;
+    const url =`https://cryptic-tor-88585.herokuapp.com/inventory/${id}`;
   fetch(url)
   .then(res=>res.json())
   .then(data=>setService(data))
@@ -32,7 +32,7 @@ const InventoryDetails = () => {
         const updateQunatity ={quantity:newQuantity,...rest}
         setService(updateQunatity)
 
-      const url =`https://limitless-dawn-19403.herokuapp.com/inventory/${id}`;
+      const url =`https://cryptic-tor-88585.herokuapp.com/inventory/${id}`;
       fetch(url,{
         method:'PUT',
         headers:{
@@ -59,7 +59,7 @@ const InventoryDetails = () => {
       //  console.log(updateQunatity);
        setService(updateQunatity)
 
-      const url =`https://limitless-dawn-19403.herokuapp.com/inventory/${id}`;
+      const url =`https://cryptic-tor-88585.herokuapp.com/inventory/${id}`;
       fetch(url,{
         method:'PUT',
         headers:{

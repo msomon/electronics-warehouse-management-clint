@@ -8,6 +8,7 @@ import img3 from '../../../images/img3.webp'
 import img4 from '../../../images/img4.webp'
 import Inventory from '../Inventory/Inventory';
 import useHooks from '../../Hooks/useHooks';
+import Review from '../Review/Review';
 
 const Home = () => {
   const {inventories}=useHooks()
@@ -66,7 +67,7 @@ const Home = () => {
       <Carousel.Caption>
         <h3>Your Opinion My Commitment</h3>
         <p>
-          Highly Trained Photographer 
+          Highly Trained Service 
         </p>
       </Carousel.Caption>
     </Carousel.Item>
@@ -79,6 +80,7 @@ const Home = () => {
     
   }
   </div>
+  <Review></Review>
     </div>
   );
 };

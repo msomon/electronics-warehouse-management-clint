@@ -1,9 +1,10 @@
+
 import { useEffect, useState } from 'react';
 
 const useHooks = () => {
 const [inventories,setInventories]=useState([]);
 useEffect( ()=>{
-fetch('https://limitless-dawn-19403.herokuapp.com/inventory')
+fetch('https://cryptic-tor-88585.herokuapp.com/inventory')
 .then(res=>res.json())
 .then(data=>setInventories(data))
 
@@ -11,10 +12,33 @@ fetch('https://limitless-dawn-19403.herokuapp.com/inventory')
 
 const [items,setItems]=useState([]);
 
-useEffect(()=>{
-fetch('https://limitless-dawn-19403.herokuapp.com/myitems')
+
+useEffect(()=>{ 
+fetch('https://cryptic-tor-88585.herokuapp.com/myitems')
 .then(res=>res.json())
 .then(data=>setItems(data))
+
+
+//  use axios   //
+
+// const myItems = async()=>{
+//   const email = user.email
+//   const url = `https://cryptic-tor-88585.herokuapp.com/myitems?email=${email}`
+//  try{
+//   const {data} = await axios.get(url,{
+//     headers :{
+//       authorization: `Bearer ${localStorage.getItem('accessToken')}`
+//     }
+//   })
+//   setItems(data)
+//  }
+//  catch(error){
+
+//  }
+// }
+// myItems()
+
+
 },[items])
 
 

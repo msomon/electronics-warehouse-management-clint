@@ -12,7 +12,7 @@ const Items = ({item}) => {
     // console.log('hallow');
 const proceed = window.confirm('are you sure')
 if(proceed){
-const url =`https://limitless-dawn-19403.herokuapp.com/myItems/${id}`
+const url =`https://cryptic-tor-88585.herokuapp.com/myItems/${id}`
 fetch(url,{
 method:'DELETE'
 })

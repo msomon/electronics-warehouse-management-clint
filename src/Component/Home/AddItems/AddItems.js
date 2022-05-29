@@ -6,7 +6,7 @@ const AddItems = (event) => {
   const { register, handleSubmit } = useForm();
   const onSubmit = data => {
     // console.log(data)
-    const url = `https://limitless-dawn-19403.herokuapp.com/additems`
+    const url = `https://cryptic-tor-88585.herokuapp.com/additems`
     fetch(url,{
       method:'POST',
       headers:{
