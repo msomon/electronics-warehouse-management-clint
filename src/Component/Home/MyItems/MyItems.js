@@ -20,7 +20,7 @@ const navigate = useNavigate()
     // console.log(user.email);
     const myItem = async()=>{
       const email = user?.email
-      const url = `http://localhost:5000/myitems?email=${email}`
+      const url = `https://cryptic-tor-88585.herokuapp.com/myitems?email=${email}`
 
         
      try{
