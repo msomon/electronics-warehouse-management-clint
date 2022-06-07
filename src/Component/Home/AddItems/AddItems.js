@@ -1,18 +1,33 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import auth from '../../../firebase.init';
 
 const AddItems = (event) => {
   const { register, handleSubmit } = useForm();
+  const [user]  = useAuthState(auth)
   const onSubmit = data => {
-    // console.log(data)
+
+     const product = {
+      img :data.img ,
+      name : data.name , 
+      email : user?.email,
+      price : data.price ,
+      quantity : data.quantity ,
+      supplierName : data.supplierName ,
+      description : data.description
+      
+
+     }
+    console.log(product)
     const url = `https://cryptic-tor-88585.herokuapp.com/additems`
     fetch(url,{
       method:'POST',
       headers:{
         'content-type':'application/json'
       },
-      body:JSON.stringify(data)
+      body:JSON.stringify(product)
     }) 
     .then(res=>res.json())
     .then(result=>console.log(result))

@@ -17,16 +17,19 @@ const navigate = useNavigate()
   useEffect(()=>{ 
 
     //  use axios   //
-    
+    // console.log(user.email);
     const myItem = async()=>{
-      const email = user.email
-      const url = `https://cryptic-tor-88585.herokuapp.com/myitems?email=${email}`
+      const email = user?.email
+      const url = `http://localhost:5000/myitems?email=${email}`
+
+        
      try{
       const {data} = await axios.get(url,{
         headers :{
           authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
       })
+      
       setItems(data)
      }
      catch(error){
@@ -36,11 +39,13 @@ const navigate = useNavigate()
        }
      }
     }
+
     myItem()
     
-    
     },[user])
-
+    
+    console.log(items);
+    
   return (
     <div className='items'>
       {

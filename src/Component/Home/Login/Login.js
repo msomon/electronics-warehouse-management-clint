@@ -27,6 +27,10 @@ const location = useLocation()
 let from = location.state?.from?.pathname ||'/';
 
 
+if(user){
+  navigate(from ,{replace:true})
+}
+
 const handleLogin =async event=>{
 event.preventDefault();
 const email =event.target.email.value;
@@ -35,7 +39,7 @@ await signInWithEmailAndPassword(email, password)
 const {data} = await axios.post('https://cryptic-tor-88585.herokuapp.com/login',{email})
 // console.log(data);
 localStorage.setItem('accessToken',data.accessToken)
-navigate(from ,{replace:true})
+
 
 }
 
@@ -47,10 +51,6 @@ const resetPassword=async(event)=>{
 }
 
 
-if(user){
-  
-
-}
 
 const navigateRegistar=()=>{
 navigate('/registar')

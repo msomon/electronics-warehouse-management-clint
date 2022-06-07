@@ -25,6 +25,7 @@ const Navbar = () => {
         <Link to='/manageinventory'>Manage Inventory</Link>
         <Link to='/myitems'>My Items</Link>
         <Link to='/additems'>Add Items</Link>
+        
         </>
 
       }
@@ -34,6 +35,9 @@ const Navbar = () => {
         :
             <Link to='/login'>Login</Link>
 
+      }
+      {
+        user && <li>{user.email}</li>
       }
       
       </div>
