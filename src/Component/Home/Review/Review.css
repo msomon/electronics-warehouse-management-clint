@@ -25,10 +25,10 @@
       
       }
       .review{
-        margin-x:5px;
+        /* margin-x:5px; */
         max-width:650px;
-        min-width:350px;
-      
+        min-width:330px;
+       padding:5px;
       }
     
   }

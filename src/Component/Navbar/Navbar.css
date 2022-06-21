@@ -29,10 +29,13 @@ margin-left: 25px;
 /* //   responsive  // */
 @media(min-width:350px)and (max-width:680px){
 
-  
+  .name{
+    display:none;
+  }
   
   .navbar a{
     display: flex;
+    align-items:flex-start;
     flex-direction: column;
     margin-top: 10px;
     background-color: #6047ec;

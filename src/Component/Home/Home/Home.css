@@ -16,8 +16,8 @@ margin-top: 50px;
   .carosel{
     min-width: 355px;
     max-height:400px ;
-  margin-left: 0px;
-  
+   margin-left: 0px;
+  padding:1px;
 }
 
 .inventories{

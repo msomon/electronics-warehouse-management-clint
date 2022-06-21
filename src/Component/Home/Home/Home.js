@@ -16,7 +16,7 @@ const Home = () => {
 // console.log(inventories.quantity);
 
   return (
-    <div>
+    <div className='mt-3'>
      
       <div className='carosel'>
     <Carousel >
