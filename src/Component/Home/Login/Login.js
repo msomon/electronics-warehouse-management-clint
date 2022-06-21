@@ -55,6 +55,7 @@ const resetPassword=async(event)=>{
 const navigateRegistar=()=>{
 navigate('/registar')
 }
+
   return (
     <div className='container w-50 mx-auto mt-3 login'>
       <h1 className='text-primary text-center'> Please login </h1>

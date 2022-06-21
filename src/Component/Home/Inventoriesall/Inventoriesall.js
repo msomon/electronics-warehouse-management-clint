@@ -28,7 +28,7 @@ method:'DELETE'
 
   return (
   
-<div>
+<div className=''>
 <div className='cart'>
       <img src={img} alt="" />
       <h4>Product: {name}</h4>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useHooks from '../../Hooks/useHooks';
-import Inventories from '../Inventories/Inventories';
+import Inventoriesall from '../Inventoriesall/Inventoriesall';
 import MyItems from '../MyItems/MyItems';
 import './ManageInventory.css'
+
 const ManageInventory = () => {
   const navigate = useNavigate()
   const {inventories}=useHooks()
@@ -18,7 +19,7 @@ const ManageInventory = () => {
       <button className='btn btn-success btn-lg mt-5' onClick={addInventory} >Add Inventory</button>
       <div className='inventories'>
         {
-           inventories?.map(inventory =><Inventories inventory={inventory} key={inventory._id}></Inventories>)
+           inventories?.map(inventory =><Inventoriesall inventory={inventory} key={inventory._id}></Inventoriesall>)
         }
       </div>
       <MyItems></MyItems>

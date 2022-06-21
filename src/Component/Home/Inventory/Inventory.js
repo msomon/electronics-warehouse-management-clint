@@ -12,6 +12,7 @@ const Inventory = ({inventory}) => {
     navigate(`/inventorydetails/${id}`)
       }
   return (
+    <div className=''>
     <div className='cart'>
       <img className='' src={img} alt="" />
       <h4>Product: {name}</h4>
@@ -20,6 +21,8 @@ const Inventory = ({inventory}) => {
       <h4>Supplier Name: {supplierName}</h4>
       <h5>Description: {description}</h5>
       <button onClick={()=>navigateDetail(_id)} className='btn btn-primary rounded-pill'>Update: {name}</button>
+    </div>
+
     </div>
   );
 };

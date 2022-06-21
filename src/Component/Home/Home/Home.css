@@ -1,9 +1,7 @@
-.carosel{
-  
+.carosel{ 
   height: 650px;
-  padding: 20px;
+  padding: 10px;
   z-index: 2;
-  margin:10px 10px 5px 5px;
   border-radius: 10px;
 }
 .inventories{
@@ -14,12 +12,19 @@ margin-top: 50px;
 
 /* //   ✔ responsive👍   // */
 
-@media(max-width:576px){
+@media(min-width:350px)and (max-width:680px){
   .carosel{
-    width: 550px;
+    min-width: 355px;
+    max-height:400px ;
   margin-left: 0px;
   
-  }
+}
+
+.inventories{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
   
+  }
+
   
 }

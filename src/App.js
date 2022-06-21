@@ -19,7 +19,7 @@ import NotFound from './Component/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div className='me-0'>
      <Navbar></Navbar>
       <Routes>
      <Route path='/' element={<Home></Home>}></Route>
@@ -31,7 +31,8 @@ function App() {
      </RequireAuth>}></Route>
      <Route path='/manageinventory' element={
        <RequireAuth>
-         <ManageInventory></ManageInventory>
+         <ManageInventory
+         ></ManageInventory>
        </RequireAuth>
      }></Route>
      <Route path='/myitems' element={

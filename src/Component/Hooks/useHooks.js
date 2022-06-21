@@ -14,7 +14,13 @@ const [items,setItems]=useState([]);
 
 
 useEffect(()=>{ 
-fetch('https://cryptic-tor-88585.herokuapp.com/myitems')
+fetch('https://cryptic-tor-88585.herokuapp.com/myitems',
+  {
+    method: 'GET',
+    headers: {
+        'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+    }
+})
 .then(res=>res.json())
 .then(data=>setItems(data))
 
