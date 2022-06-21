@@ -47,7 +47,7 @@ import Loading from '../RequireAuth/Loading/Loading';
       }
   
     return (
-      <div className='container w-50 mx-auto'>
+      <div className='container mx-auto w-80 mt-5 '>
         <h2 className='mt-2 mb-4'>Registar Now</h2>
         <Form onSubmit={registar}>
         <Form.Group className="mb-3" controlId="formBasicname">

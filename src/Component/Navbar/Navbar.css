@@ -32,6 +32,9 @@ margin-left: 25px;
   .name{
     display:none;
   }
+  .navbar{
+    position: relative;
+  }
   
   .navbar a{
     display: flex;
