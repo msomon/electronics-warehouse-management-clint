@@ -74,7 +74,7 @@ const InventoryDetails = () => {
 
    
   return (
-    <div className='cart inventorydetails'>
+    <div className='cart h-100 inventorydetails'>
       <img className='' src={img} alt="" />
       <h4>Product: {name}</h4>
       <h4>Price: {price}</h4>

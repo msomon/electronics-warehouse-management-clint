@@ -14,15 +14,15 @@ const Navbar = () => {
   }
   // console.log(user);
   return (
-    <div className='navbar '>
-      <div>
-        <h2 className='name'>Somon Electronics</h2>
+    <div className='navbar'>
+      <div className='name'>
+        <h2 >Somon Electronics</h2>
       </div>
-      <div>
+      <div className='link'>
       <Link to='/home'>Home</Link>
       {
         user && <>
-        <Link to='/manageinventory'>Manage Inventory</Link>
+        <Link to='/manageinventory'>Inventory</Link>
         <Link to='/myitems'>My Items</Link>
         <Link to='/additems'>Add Items</Link>
         

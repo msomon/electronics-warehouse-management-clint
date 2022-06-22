@@ -33,14 +33,20 @@ margin-left: 25px;
     display:none;
   }
   .navbar{
+   
     position: relative;
+  }
+  .link{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
   }
   
   .navbar a{
-    display: flex;
-    align-items:flex-start;
-    flex-direction: column;
-    margin-top: 10px;
+   
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
     background-color: #6047ec;
     
   }
