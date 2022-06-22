@@ -57,7 +57,7 @@ navigate('/registar')
 }
 
   return (
-    <div className='container mx-auto w-80 mt-5 form'>
+    <div className='container mx-auto w-50 mt-5 form'>
       <h1 className='text-primary text-center'> Please login </h1>
       <Form onSubmit={handleLogin}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
