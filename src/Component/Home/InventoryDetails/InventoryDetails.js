@@ -10,9 +10,16 @@ const InventoryDetails = () => {
   const {id}= useParams()
   const {img,_id,name,price,quantity,supplierName,description}=service ;
   
-  // console.log(service.quantity);
+  // console.log(service.description);
+
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
+
   useEffect( ()=>{
-    const url =`https://cryptic-tor-88585.herokuapp.com/inventory/${id}`;
+    const url =`https://electronics-warehouse-website.onrender.com/inventory/${id}`;
   fetch(url)
   .then(res=>res.json())
   .then(data=>setService(data))
@@ -32,7 +39,7 @@ const InventoryDetails = () => {
         const updateQunatity ={quantity:newQuantity,...rest}
         setService(updateQunatity)
 
-      const url =`https://cryptic-tor-88585.herokuapp.com/inventory/${id}`;
+      const url =`https://electronics-warehouse-website.onrender.com/inventory/${id}`;
       fetch(url,{
         method:'PUT',
         headers:{
@@ -47,19 +54,20 @@ const InventoryDetails = () => {
     const addQuantity =(event)=>{
       event.preventDefault()
        const {quantity, ...rest} = service ;
-       console.log(quantity);
-       console.log(rest);
+      //  console.log(quantity);
+      //  console.log(rest);
        const addQuantity =parseInt(event.target.name.value) ;
        const previewQuantity =parseInt(quantity)
-       console.log(addQuantity ,previewQuantity);
+      //  console.log(addQuantity ,previewQuantity);
        const newQuantity = previewQuantity + addQuantity ;
-  console.log(newQuantity
-    );
+      //  console.log(newQuantity);
+
+
        const updateQunatity ={quantity:newQuantity,...rest}
       //  console.log(updateQunatity);
        setService(updateQunatity)
 
-      const url =`https://cryptic-tor-88585.herokuapp.com/inventory/${id}`;
+      const url =`https://electronics-warehouse-website.onrender.com/inventory/${id}`;
       fetch(url,{
         method:'PUT',
         headers:{
@@ -74,7 +82,7 @@ const InventoryDetails = () => {
 
    
   return (
-    <div className='cart h-100 inventorydetails'>
+    <div className='cart h-100 inventorydetails mx-auto'>
       <img className='' src={img} alt="" />
       <h4>Product: {name}</h4>
       <h4>Price: {price}</h4>

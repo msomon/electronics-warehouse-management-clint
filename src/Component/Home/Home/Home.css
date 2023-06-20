@@ -1,5 +1,5 @@
 .carosel{ 
-  height: 650px;
+  height: 400px;
   padding: 10px;
   z-index: 2;
   border-radius: 10px;
@@ -7,7 +7,7 @@
 .inventories{
 display: grid;
 grid-template-columns: repeat(3,1fr);
-margin-top: 50px;
+margin-top: 20px;
 }
 
 /* //   ✔ responsive👍   // */

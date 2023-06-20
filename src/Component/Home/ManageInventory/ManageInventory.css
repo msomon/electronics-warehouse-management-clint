@@ -8,7 +8,7 @@
 .inventories{
   display: grid;
 grid-template-columns: repeat(3,1fr);
-margin-top: 50px;
+margin-top: 20px;
 }
 
 /* //   ✔ responsive👍   // */

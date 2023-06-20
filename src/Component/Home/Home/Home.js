@@ -73,10 +73,14 @@ const Home = () => {
     </Carousel.Item>
   </Carousel>
   </div>
+  <div>
+    <h1 className='text-center text-primary mt-2'>Inventories</h1>
+  </div>
+
   <div className='inventories'>
   {
     
-      inventories.slice(0,6).map(inventory =><Inventory inventory={inventory} key={inventory._id}></Inventory>)
+      inventories.map(inventory =><Inventory inventory={inventory} key={inventory._id}></Inventory>)
     
   }
   </div>

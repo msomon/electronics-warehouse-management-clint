@@ -21,7 +21,7 @@ const AddItems = (event) => {
 
      }
     console.log(product)
-    const url = `https://cryptic-tor-88585.herokuapp.com/additems`
+    const url = `https://electronics-warehouse-website.onrender.com/additems`
     fetch(url,{
       method:'POST',
       headers:{

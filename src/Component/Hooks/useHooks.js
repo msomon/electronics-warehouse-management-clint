@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const useHooks = () => {
 const [inventories,setInventories]=useState([]);
 useEffect( ()=>{
-fetch('https://cryptic-tor-88585.herokuapp.com/inventory')
+fetch('https://electronics-warehouse-website.onrender.com/inventory')
 .then(res=>res.json())
 .then(data=>setInventories(data))
 
@@ -14,7 +14,7 @@ const [items,setItems]=useState([]);
 
 
 useEffect(()=>{ 
-fetch('https://cryptic-tor-88585.herokuapp.com/myitems',
+fetch('https://electronics-warehouse-website.onrender.com/myitems',
   {
     method: 'GET',
     headers: {
@@ -29,7 +29,7 @@ fetch('https://cryptic-tor-88585.herokuapp.com/myitems',
 
 // const myItems = async()=>{
 //   const email = user.email
-//   const url = `https://cryptic-tor-88585.herokuapp.com/myitems?email=${email}`
+//   const url = `https://electronics-warehouse-website.onrender.com/myitems?email=${email}`
 //  try{
 //   const {data} = await axios.get(url,{
 //     headers :{

@@ -20,7 +20,7 @@ const navigate = useNavigate()
     // console.log(user.email);
     const myItem = async()=>{
       const email = user?.email
-      const url = `https://cryptic-tor-88585.herokuapp.com/myitems?email=${email}`
+      const url = `https://electronics-warehouse-website.onrender.com/myitems?email=${email}`
 
         
      try{
@@ -44,10 +44,10 @@ const navigate = useNavigate()
     
     },[user])
     
-    console.log(items);
+    // console.log(items);
     
   return (
-    <div className='items'>
+    <div className='items w-100'>
       {
         items?.map(item=><Item item={item} key={item._id} ></Item>)
       }
