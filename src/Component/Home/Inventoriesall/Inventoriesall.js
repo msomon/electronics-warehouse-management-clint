@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+
 import useHooks from '../../Hooks/useHooks';
 import { useAuthState} from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 const Inventories = ({inventory}) => {
+  console.log(inventory);
  
   const {inventories,setInventories}=useHooks()
   const {img,_id,name,price,quantity,supplierName,description}=inventory;
@@ -29,7 +30,7 @@ method:'DELETE'
 
   return (
   
-<div className=''>
+
 <div className='cart'>
       <img src={img} alt="" />
       <h4>Product: {name}</h4>
@@ -41,7 +42,7 @@ method:'DELETE'
       <button disabled={user?.email !="hsomon940@gmail.com" ? true : false }  className=' btn btn-danger btn-lg ' onClick={()=>deleteInventory(_id)}>Delete</button>
       </div>
     </div>
-    </div>
+    
   );
 };
 

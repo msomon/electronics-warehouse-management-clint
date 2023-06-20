@@ -26,7 +26,7 @@ const ManageInventory = () => {
            inventories?.map(inventory =><Inventoriesall inventory={inventory} key={inventory._id}></Inventoriesall>)
         }
       </div>
-      <MyItems></MyItems>
+     
     </div>
   );
 };

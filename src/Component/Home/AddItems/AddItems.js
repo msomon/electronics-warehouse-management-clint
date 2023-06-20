@@ -18,9 +18,8 @@ const AddItems = (event) => {
       supplierName : data.supplierName ,
       description : data.description
       
-
      }
-    console.log(product)
+    // console.log(product)
     const url = `https://electronics-warehouse-website.onrender.com/additems`
     fetch(url,{
       method:'POST',
