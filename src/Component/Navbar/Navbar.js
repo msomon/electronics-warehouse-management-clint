@@ -37,7 +37,7 @@ const Navbar = () => {
 
       }
       {
-        user && <li>{user.email}</li>
+        user && <h6 className='user '>{user.email}</h6>
       }
       
       </div>

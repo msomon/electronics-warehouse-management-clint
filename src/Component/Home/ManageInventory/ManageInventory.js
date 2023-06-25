@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useHooks from '../../Hooks/useHooks';
 import Inventoriesall from '../Inventoriesall/Inventoriesall';
-import MyItems from '../MyItems/MyItems';
 import './ManageInventory.css'
 
 const ManageInventory = () => {

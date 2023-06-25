@@ -80,7 +80,7 @@ const Home = () => {
   <div className='inventories'>
   {
     
-      inventories.map(inventory =><Inventory inventory={inventory} key={inventory._id}></Inventory>)
+      inventories?.map(inventory =><Inventory inventory={inventory} key={inventory._id}></Inventory>)
     
   }
   </div>
