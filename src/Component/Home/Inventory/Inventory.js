@@ -2,9 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Inventory.css'
 const Inventory = ({inventory}) => {
-  // console.log(inventory.quantity);
   const {img,name,_id,description,price,quantity,supplierName}=inventory;
-  // console.log(description.slice(0,100));
+ 
 
   const navigate = useNavigate()
 
@@ -14,7 +13,7 @@ const Inventory = ({inventory}) => {
   return (
    
     <div className='cart'>
-      <img className='' src={img} alt="" />
+      <img  src={img} alt="" />
       <h4>Product: {name}</h4>
       <h4>Price: {price}</h4>
       <h4>Quantity: {quantity}</h4>

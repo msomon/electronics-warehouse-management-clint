@@ -37,7 +37,7 @@ const email =event.target.email.value;
 const password = event.target.password.value;
 await signInWithEmailAndPassword(email, password)
 const {data} = await axios.post('https://electronics-warehouse-website.onrender.com/login',{email})
-// console.log(data);
+
 localStorage.setItem('accessToken',data.accessToken)
 
 

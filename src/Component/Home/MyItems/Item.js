@@ -15,7 +15,7 @@ const Items = ({item}) => {
   
   const {items,setItems}=useHooks()
   const deleteItem=(id)=>{
-    // console.log('hallow');
+   
 const proceed = window.confirm('are you sure')
 if(proceed){
 const url =`https://electronics-warehouse-website.onrender.com/myItems/${id}`
@@ -24,7 +24,7 @@ method:'DELETE'
 })
 .then(res=>res.json())
 .then(data=>{
-  // console.log(data)
+  
   const remaining = items.filter(item=>item._id !==id);
   setItems(remaining)
 })

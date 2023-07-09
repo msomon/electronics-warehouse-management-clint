@@ -1,5 +1,5 @@
 .cart{
-    height: 530px;
+    height: 510px;
     box-shadow: 0 0 0 5;
     padding: 10px;
     text-align: center;
@@ -9,7 +9,7 @@
   }
   .cart img{
     max-width: 230px;
-    height: 200px;
+    height: 160px;
     border-radius: 10px;
     margin-bottom: 10px;
   }
@@ -22,7 +22,7 @@
   
   @media (max-width:450px){
     .cart{
-      height:520px;
+      height:510px;
       
     }
 
@@ -31,9 +31,7 @@
   @media(min-width:460px)and (max-width:750px){
     
     .cart{
-      /* margin-x:5px; */
-          /* max-width:550px;
-          min-width:300px; */
+    
           min-width: 330px;
           height: 590px ;
           padding:10px;
@@ -42,7 +40,7 @@
     .cart img{
       padding-top: 5px;
       width: 230px;
-      /* max-height: 350px; */
+      height: 120px;
       border-radius: 10px;
       margin-bottom: 10px;
     }

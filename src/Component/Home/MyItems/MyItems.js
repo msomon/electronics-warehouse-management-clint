@@ -17,7 +17,7 @@ const navigate = useNavigate()
   useEffect(()=>{ 
 
     //  use axios   //
-    // console.log(user.email);
+   
     const myItem = async()=>{
       const email = user?.email
       const url = `https://electronics-warehouse-website.onrender.com/myitems?email=${email}`
@@ -44,7 +44,7 @@ const navigate = useNavigate()
     
     },[user])
     
-    // console.log(items);
+    
     
   return (
     <div className='items w-100'>

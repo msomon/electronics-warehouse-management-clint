@@ -32,7 +32,7 @@ import Loading from '../RequireAuth/Loading/Loading';
       const name = event.target.name.value
       const email = event.target.email.value
       const password = event.target.password.value
-      console.log(name,email,password);
+    
   if(password.length < 6){
     return toast('Please Give More Than 6 Character')
   }

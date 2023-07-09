@@ -9,11 +9,10 @@ import img4 from '../../../images/img4.webp'
 import Inventory from '../Inventory/Inventory';
 import useHooks from '../../Hooks/useHooks';
 import Review from '../Review/Review';
+import Loading from '../RequireAuth/Loading/Loading'
 
 const Home = () => {
   const {inventories}=useHooks()
-
-// console.log(inventories.quantity);
 
   return (
     <div className='mt-3'>
@@ -78,6 +77,8 @@ const Home = () => {
   </div>
 
   <div className='inventories'>
+    { !inventories && <Loading></Loading>}
+    
   {
     
       inventories?.map(inventory =><Inventory inventory={inventory} key={inventory._id}></Inventory>)

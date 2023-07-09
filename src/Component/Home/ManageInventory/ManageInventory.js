@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import useHooks from '../../Hooks/useHooks';
 import Inventoriesall from '../Inventoriesall/Inventoriesall';
 import './ManageInventory.css'
+import Loading from '../RequireAuth/Loading/Loading';
 
 const ManageInventory = () => {
   const navigate = useNavigate()
   const {inventories}=useHooks()
-  // console.log(items); 
-
+  
   const addInventory=() =>{
     navigate('/additems')
   }
@@ -20,6 +20,8 @@ const ManageInventory = () => {
 
       </div>
       <div className='inventories'>
+
+      { !inventories && <Loading></Loading>}
         
         {
            inventories?.map(inventory =><Inventoriesall inventory={inventory} key={inventory._id}></Inventoriesall>)

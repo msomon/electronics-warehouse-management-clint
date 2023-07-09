@@ -2,7 +2,9 @@
 import { useEffect, useState } from 'react';
 
 const useHooks = () => {
+
 const [inventories,setInventories]=useState([]);
+
 useEffect( ()=>{
 fetch('https://electronics-warehouse-website.onrender.com/inventory')
 .then(res=>res.json())
@@ -47,8 +49,6 @@ fetch('https://electronics-warehouse-website.onrender.com/myitems',
 
 },[items])
 
-
-// console.log(items);
 
 return {inventories,setInventories,items,setItems}  ;
 };

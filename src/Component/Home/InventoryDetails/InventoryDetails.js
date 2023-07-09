@@ -10,8 +10,7 @@ const InventoryDetails = () => {
   const {id}= useParams()
   const {img,_id,name,price,quantity,supplierName,description}=service ;
   
-  // console.log(service.description);
-
+  
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -30,7 +29,6 @@ const InventoryDetails = () => {
 
     const deliveryItem =()=>{
        const {quantity, ...rest} = service ;
-      //  console.log(quantity);
       if(quantity < 1){
         return toast('Out Of Stock')
       }
@@ -54,17 +52,16 @@ const InventoryDetails = () => {
     const addQuantity =(event)=>{
       event.preventDefault()
        const {quantity, ...rest} = service ;
-      //  console.log(quantity);
-      //  console.log(rest);
+     
        const addQuantity =parseInt(event.target.name.value) ;
        const previewQuantity =parseInt(quantity)
-      //  console.log(addQuantity ,previewQuantity);
+      
        const newQuantity = previewQuantity + addQuantity ;
-      //  console.log(newQuantity);
+    
 
 
        const updateQunatity ={quantity:newQuantity,...rest}
-      //  console.log(updateQunatity);
+      
        setService(updateQunatity)
 
       const url =`https://electronics-warehouse-website.onrender.com/inventory/${id}`;

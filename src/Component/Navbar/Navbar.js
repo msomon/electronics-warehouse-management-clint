@@ -12,11 +12,10 @@ const Navbar = () => {
   const logout = () => {
     signOut(auth);
   }
-  // console.log(user);
   return (
     <div className='navbar'>
       <div className='name'>
-        <h2 >Somon Electronics</h2>
+        <h2 className='text-warning'>Somon Electronics</h2>
       </div>
       <div className='link'>
       <Link to='/home'>Home</Link>
