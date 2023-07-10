@@ -2,8 +2,16 @@
   margin-bottom: 100px;
 }
 
+@media (max-width:450px){
 
-@media(min-width:350px)and (max-width:680px){
+.form{
+  
+}
+
+}
+
+
+@media(min-width:460px)and (max-width:750px){
 
 .form{
   width:80%!important;
